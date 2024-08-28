@@ -64,7 +64,7 @@
 &kp C_AL_MY_COMPUTER     &kp TILDE  &kp PIPE             &kp AT               &kp LBKT           &kp RBKT     &bt BT_CLR                &kp N2      &kp LBRC     &kp RBRC              &kp CARET         &kp POUND             &kp EXCL           &kp INS
 &mt LEFT_WIN ESC         &kp PRCNT  &mt LEFT_SHIFT FSLH  &mt LCTRL MINUS      &mt LEFT_ALT LPAR  &kp RPAR     &bt BT_CLR_ALL            &kp N3      &kp LT       &mt RIGHT_ALT GT      &mt RCTRL PLUS    &mt RIGHT_SHIFT STAR  &kp EQUAL          &kp RIGHT_WIN
 &kp SCROLLLOCK           &kp GRAVE  &kp BSLH             &kp UNDER            &kp DLLR           &none        &bt BT_CLR                &kp N4      &none        &kp AMPS              &kp SEMI          &kp COLON             &kp DOUBLE_QUOTES  &kp DELETE
-                                                         &trans               &lt ARROW TAB      &kp C_MUTE   &out OUT_TOG              &kp N5      &kp SPACE    &lt MOUSE ENTER       &mt LEFT_SHIFT SPACE 
+                                                         &trans               &lt ARROW TAB      &kp C_MUTE   &bt BT_CLR                &kp N5      &kp SPACE    &lt MOUSE ENTER       &mt LEFT_SHIFT SPACE 
             >;
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
@@ -80,7 +80,7 @@
 &kp C_AL_MY_COMPUTER     &kp RC(Z)  &kp RC(Y)            &mmv MOVE_UP         &msc SCRL_UP       &msc SCRL_DOWN    &bt BT_CLR                &kp N2      &kp RA(HOME)   &kp RA(LEFT_ARROW)    &kp RA(RIGHT_ARROW)   &kp RC(N)         &kp RC(RS(N))      &kp INS
 &mt LEFT_WIN ESC         &kp RC(S)  &mmv MOVE_LEFT       &mmv MOVE_DOWN       &mmv MOVE_RIGHT    &kp LA(ESC)       &bt BT_CLR_ALL            &kp N3      &kp RG(V)      &kp RIGHT_ALT         &kp RCTRL             &kp RIGHT_SHIFT   &kp RIGHT_WIN      &kp RIGHT_WIN
 &kp SCROLLLOCK           &kp RC(A)  &kp RC(X)            &kp RC(C)            &kp RC(V)          &mkp MCLK         &bt BT_CLR                &kp N4      &none          &none                 &none                 &none             &kp DEL
-                                                         &mkp LCLK            &mkp RCLK          &kp C_MUTE        &out OUT_TOG              &kp N5      &kp SPACE      &trans                &kp SPACE
+                                                         &mkp LCLK            &mkp RCLK          &kp C_MUTE        &bt BT_CLR                &kp N5      &kp SPACE      &trans                &kp SPACE
             >;
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
@@ -96,7 +96,7 @@
 &kp C_AL_MY_COMPUTER     &kp RC(Z)  &kp RC(Y)            &kp UP               &msc SCRL_UP       &msc SCRL_DOWN    &bt BT_CLR                &kp N2      &kp RA(HOME)   &kp RA(LEFT)          &kp RA(RIGHT_ARROW)   &kp RC(N)         &kp RC(RS(N))      &kp INS
 &mt LEFT_WIN ESC         &kp RC(S)  &kp LEFT_ARROW       &kp DOWN_ARROW       &kp RIGHT_ARROW    &kp TAB           &bt BT_CLR_ALL            &kp N3      &kp RG(V)      &kp RIGHT_ALT         &kp RCTRL             &kp RIGHT_SHIFT   &kp RIGHT_WIN      &kp RIGHT_WIN
 &kp CAPS                 &kp RC(A)  &kp RC(X)            &kp RC(C)            &kp RC(V)          &kp BACKSPACE     &bt BT_CLR                &kp N4      &none          &none                 &none                 &none             &none              &kp DEL
-                                                         &kp BACKSPACE        &trans             &kp C_MUTE        &out OUT_TOG              &kp N5      &kp SPACE      &kp ENTER             &kp SPACE
+                                                         &kp BACKSPACE        &trans             &kp C_MUTE        &bt BT_CLR                &kp N5      &kp SPACE      &kp ENTER             &kp SPACE
             >;
             sensor-bindings =
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>,
