@@ -14,6 +14,12 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/event_manager.h>
 #include <zmk/split/bluetooth/peripheral.h>
 #include <zmk/events/split_peripheral_status_changed.h>
+#include <zmk/display/widgets/output_status.h>
+#include <zmk/events/ble_active_profile_changed.h>
+#include <zmk/events/endpoint_changed.h>
+#include <zmk/usb.h>
+#include <zmk/ble.h>
+#include <zmk/endpoints.h>
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
