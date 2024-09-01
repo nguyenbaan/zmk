@@ -27,19 +27,19 @@ struct peripheral_status_state {
     bool connected;
 };
 
-// struct output_trangthai_state {
-//     struct zmk_endpoint_instance selected_diemcuoi;
-//     bool kichhoat_profile_connected;
-//     bool kichhoat_profile_bonded;
-// };
+struct output_trangthai_state {
+    struct zmk_endpoint_instance selected_diemcuoi;
+    bool kichhoat_profile_connected;
+    bool kichhoat_profile_bonded;
+};
 
-static struct output_status_state get_state(const zmk_event_t *_eh) {
-    return (struct output_status_state){.selected_endpoint = zmk_endpoints_selected(),
-                                        .active_profile_connected =
-                                            zmk_ble_active_profile_is_connected(),
-                                        .active_profile_bonded = !zmk_ble_active_profile_is_open()};
-    ;
-}
+// static struct output_status_state get_state(const zmk_event_t *_eh) {
+//     return (struct output_status_state){.selected_endpoint = zmk_endpoints_selected(),
+//                                         .active_profile_connected =
+//                                             zmk_ble_active_profile_is_connected(),
+//                                         .active_profile_bonded = !zmk_ble_active_profile_is_open()};
+//     ;
+// }
 
 static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
     return (struct peripheral_status_state){.connected = zmk_split_bt_peripheral_is_connected()};
