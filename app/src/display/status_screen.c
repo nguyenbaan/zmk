@@ -49,8 +49,8 @@ lv_obj_t *zmk_display_status_screen() {
 #endif
 
 #if IS_ENABLED(CONFIG_ZMK_WIDGET_PERIPHERAL_STATUS)
-    zmk_widget_peripheral_status_init(&peripheral_status_widget, screen);
-    lv_obj_align(zmk_widget_peripheral_status_obj(&peripheral_status_widget), LV_ALIGN_TOP_LEFT, 0,
+    zmk_widget_peripheral_status_init(&output_status_widget, screen);
+    lv_obj_align(zmk_widget_peripheral_status_obj(&output_status_widget), LV_ALIGN_TOP_LEFT, 0,
                  0);
 #endif
 
