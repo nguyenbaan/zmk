@@ -32,12 +32,16 @@ static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
 }
 
 static void set_status_symbol(lv_obj_t *label, struct peripheral_status_state state) {
-    if (!state.connected) {
-        const char *text = LV_SYMBOL_WIFI " " LV_SYMBOL_CLOSE;  // Hiển thị biểu tượng nếu connected là false
-        lv_label_set_text(label, text);
+    const char *text;
+
+    if (state.connected) {
+        text = "";  // Không hiển thị gì nếu connected là true
+    } else {
+        text = LV_SYMBOL_WIFI " " LV_SYMBOL_CLOSE;  // Hiển thị biểu tượng nếu connected là false
     }
 
     LOG_DBG("connected? %s", state.connected ? "true" : "false");
+    lv_label_set_text(label, text);
 }
 
 static void output_status_update_cb(struct peripheral_status_state state) {
