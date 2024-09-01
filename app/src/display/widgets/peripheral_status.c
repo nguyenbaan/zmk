@@ -27,11 +27,11 @@ struct peripheral_status_state {
     bool connected;
 };
 
-struct output_trangthai_state {
-    struct zmk_endpoint_instance selected_diemcuoi;
-    bool kichhoat_profile_connected;
-    bool kichhoat_profile_bonded;
-};
+// struct output_trangthai_state {
+//     struct zmk_endpoint_instance selected_diemcuoi;
+//     bool kichhoat_profile_connected;
+//     bool kichhoat_profile_bonded;
+// };
 
 static struct output_status_state get_state(const zmk_event_t *_eh) {
     return (struct output_status_state){.selected_endpoint = zmk_endpoints_selected(),
