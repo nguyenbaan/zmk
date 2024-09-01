@@ -25,6 +25,9 @@ static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
 struct peripheral_status_state {
     bool connected;
+    struct zmk_endpoint_instance selected_endpoint;
+    bool active_profile_connected;
+    bool active_profile_bonded;
 };
 
 static struct peripheral_status_state get_state(const zmk_event_t *_eh) {
