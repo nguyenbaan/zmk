@@ -1,4 +1,4 @@
-#include "enki42.dtsi"
+#include "sofle.dtsi"
 
 &kscan0 {
 	col-gpios
