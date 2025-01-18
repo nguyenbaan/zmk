@@ -1,12 +1,13 @@
 #include "sofle.dtsi"
 
 &default_transform {
-    col-offset = <6>;
+    col-offset = <7>;
 };
 
 &kscan0 {
     col-gpios
-        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 25 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
