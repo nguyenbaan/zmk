@@ -37,11 +37,11 @@
         compatible = "zmk,keymap";
         layer_0 {
             bindings = <
-&kp PSCRN         &kp N1  &kp N2            &kp N3       &kp N4          &kp N5                    &bt BT_SEL 0                                   &bt BT_SEL 0                   &kp N6            &kp N7           &kp N8       &kp N9             &kp N0            &kp LS(LCTRL) 
-&kp LG(A)         &kp Q   &kp W             &kp F        &kp P           &kp B       &bt BT_SEL 0  &bt BT_SEL 0 &bt BT_SEL 0        &bt BT_SEL 0  &bt BT_SEL 0  &bt BT_SEL 0     &kp J             &kp L            &kp U        &kp Y              &kp QMARK         &kp INS
-&kp LEFT_WIN      &kp A   &mt LEFT_SHIFT R  &mt LCTRL S  &mt LEFT_ALT T  &kp G                     &bt BT_SEL 0                                   &bt BT_SEL 0                   &kp M             &mt RIGHT_ALT N  &mt RCTRL E  &mt RIGHT_SHIFT I  &kp O             &mt RIGHT_WIN CLCK
-&kp ESC           &kp Z   &kp X             &kp C        &kp D           &kp V       &kp C_MUTE                                                                 &kp C_MUTE       &kp K             &kp H            &kp COMMA    &kp DOT            &kp SINGLE_QUOTE  &kp DEL
-                                                                         &kp SPACE   &kp TAB                                                                    &kp ENTER        &kp BACKSPACE  
+&kp PSCRN         &kp N1  &kp N2          &kp N3       &kp N4          &kp N5                       &bt BT_SEL 0                                   &bt BT_SEL 0                   &kp N6            &kp N7           &kp N8            &kp N9             &kp N0       &kp LS(LCTRL) 
+&kp LG(A)         &kp Q   &mt LSHFT W     &mt LCTRL F  &mt LALT P      &kp B           &bt BT_SEL 0 &bt BT_SEL 0 &bt BT_SEL 0         &bt BT_SEL 0 &bt BT_SEL 0  &bt BT_SEL 0     &kp J             &mt RALT L       &mt RCTRL U       &mt RSHFT Y        &kp QMARK    &kp INS
+&kp LWIN          &kp A   &mt LSHFT R     &mt LCTRL S  &mt LALT T      &kp G                        &bt BT_SEL 0                                   &bt BT_SEL 0                   &kp M             &mt RALT N       &mt RCTRL E       &mt RSHFT I        &kp O        &mt RWIN CLCK
+&kp ESC           &kp Z   &mt LSHFT X     &mt LCTRL C  &mt LALT D      &kp V          &kp C_MUTE                                                                 &kp C_MUTE       &kp K             &mt RALT H       &mt RCTRL COMMA   &mt RSHFT DOT      &kp SQT      &kp DEL
+                                                                       &kp BACKSPACE  &kp TAB                                                                    &kp ENTER        &kp SPACE 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -49,11 +49,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5   &kp N1                   &kp N6     &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&kp ESC   &kp Q  &kp W    &kp E    &kp R     &kp T    &kp N2 &kp N3 &kp N4      &kp N7 &kp N8 &kp N9                  &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&kp TAB   &kp A  &kp S    &kp D    &kp F     &kp G     &kp N5                     &kp N0  &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE   &kp C_MUTE    &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                                  &kp W    &kp E    &kp R     &kp T
+&kp PSCRN       &kp N1      &kp N2             &kp N3            &kp N4             &kp N5                      &bt BT_SEL 0                                   &bt BT_SEL 0                    &kp N6     &kp N7            &kp N8             &kp N9                &kp N0        &kp LS(LCTRL) 
+&kp LG(A)       &kp PRCNT   &mt LSHFT PIPE     &mt LCTRL AT      &mt LALT LBKT      &kp RBKT       &bt BT_SEL 0 &bt BT_SEL 0 &bt BT_SEL 0         &bt BT_SEL 0 &bt BT_SEL 0  &bt BT_SEL 0      &kp LBRC   &mt RALT RBRC     &mt RCTRL CARET    &mt RSHFT POUND       &kp EXCL      &kp INS
+&kp LWIN        &kp TILDE   &mt LSHFT FSLH     &mt LCTRL MINUS   &mt LALT LPAR      &kp RPAR                    &bt BT_SEL 0                                   &bt BT_SEL 0                    &kp LT     &mt RALT GT       &mt RCTRL PLUS     &mt RSHFT STAR        &kp EQUAL     &mt RWIN CLCK
+&kp ESC         &kp GRAVE   &mt LSHFT BSLH     &mt LCTRL UNDER   &mt LALT DLLR      &none          &trans                                                                        &trans        &none      &mt RALT AMPS     &mt RCTRL SEMI     &mt RSHFT COLON       &kp DQT       &kp DEL
+                                                                                    &kp BACKSPACE  &kp TAB                                                                       &kp ENTER     &kp SPACE 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
